@@ -1,0 +1,70 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  .landing {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid black;
+    align-items: baseline;
+    font-family: "Lexend Exa", sans-serif;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+  }
+  
+  .name {
+    position: absolute;
+    left: 55%;
+    top: 25%;
+    transform: translateX(-50%);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+  }
+  .name h1 {
+    font-size: 15vh;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -5px 0 0 #000;
+  }
+  
+  .link-container {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+  }
+  .name h3 {
+      font-size: 30px;
+      text-align: center;
+  }
+  
+  .link-img {
+    width: 48px;
+    height: 48px;
+  }
+  
+  /* corner blobs */
+  .blob-left {
+    width: 40%;
+    position: relative;
+    top: 35%;
+    left: -7%;
+  }
+  .blob-right {
+    width: 20%;
+    margin-left: 85%;
+    margin-top: -10%;
+  }
+  
