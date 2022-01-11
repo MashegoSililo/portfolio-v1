@@ -1,2 +1,4 @@
 Blobz: Pure CSS Animated Blobs
-https://toruskit.com/tools/blobz/#example
+https://toruskit.com/tools/blobz/#example\
+
+<a href='https://www.freepik.com/vectors/background'>Background vector created by rawpixel.com - www.freepik.com</a>
