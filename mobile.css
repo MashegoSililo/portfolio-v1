@@ -63,4 +63,33 @@
   .whales {
     display: none
   }
+  /* 
+  ========================================
+  Project Page
+  =======================================
+
+  */
+  .project-card{
+    display: block;
+    border-bottom: 3px solid black;
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+    margin: 2%;
+    min-height: 60vh;
+  }
+  .read-more {
+    padding-top: 2%;
+    border:none;
+    font-size: 18px;
+    background-color: white;
+    font-family: "Lexend Exa", sans-serif;  
+    float: left;
+    
+  }
+  .project-img {
+    /* display: none; */
+    width: 90%;
+  }
 }
