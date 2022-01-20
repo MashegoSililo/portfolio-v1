@@ -15,6 +15,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@200&display=swap" rel="stylesheet" />
+  <!-- Material Icons close -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Projects</title>
 </head>
 
@@ -46,16 +48,90 @@
       <div class="project-info">
         <h1>Coverwall.</h1>
         <p>
-         Coverwall generates an album cover wall for a users personal use from the users top Spotify albums.        </p>
-        <p>JS, SCSS, HTML</p>
+          Coverwall generates an album cover wall for a users personal use from the users top Spotify albums. </p>
+        <p>React, CSS, Spotify API</p>
 
         <a href="https://github.com/MashegoSililo/coverwall">view github repo</a>
         <br />
-        <!-- <button class="read-more" onclick="openProjectA">
+        <button class="read-more" onclick='openModal(`projectOne`)'>
           read more about the project.
-        </button> -->
+        </button>
+        <br />
+
       </div>
     </div>
+    <!-- Project 1 Modal -->
+    <div id='projectOne' class='modal'>
+      <button class='close' onclick='closeModal(`projectOne`)'>
+        <img src='./images/icons/close.svg'>
+      </button>
+
+      <h1>Coverwall</h1>
+
+
+      <br>
+      <h3>Coverwall generates an album cover wall for a users personal use from the users top Spotify albums.</h3>
+      <h3>Tech Stack: React, CSS, Spotify API</h3>
+      <br>
+      <article>
+        <div class="sub-heading">
+          <span>01.</span>
+          <span>Brief.</span>
+        </div>
+        <p>
+          The aim was to create a simple app using the Spotify API in order to get comfortable with the Authorisation
+          and methodology before jumping into other Spotify based projects.
+          The project was heavily inspired by the Spotify based webapps often shared on twitter, where users share their
+          results on the app and compare their results with their followers. </p>
+      </article>
+      <article>
+        <div class="sub-heading">
+          <span>02.</span>
+          <span>Research.</span>
+        </div>
+        <p>I had never worked with an API that required a user to sign in so I had no idea how to handle authorisation.
+          So I focused the majority of my research on how to handle user authorisation and how to connect that to a
+          React app.
+          My <a href="https://medium.com/@thatissofetch" target="_blank" rel="noopener noreferrer">blog post</a> goes in
+          depth on the reserach and process I went through to build this webapp.
+
+        </p>
+      </article>
+      <article>
+        <div class="sub-heading">
+          <span>03.</span>
+          <span>Design Concept.</span>
+        </div>
+        <p>
+          For this project, I really wanted a bold and bright user interface. I initially wanted to use colors that
+          matched the Spotify color pallete before deciding to go for a yellow, tangerine, black and white color scheme.
+          I wanted the project to be bright and bold but as simple as possible. I achieved this by keeping descriptions
+          brief and using bold lettering.
+
+        </p>
+      </article>
+      <article>
+        <div class="sub-heading">
+          <span>04.</span>
+          <span>Development.</span>
+        </div>
+        <p>
+        <ol>
+          <li>Choosing the Stack - I decided to use React to handle the requests and CSS to style the webapp</li>
+          <li>Connecting to Spotify to handle authorisation - here I followed the instructions from Spotify's API docs.
+          </li>
+          <li>Connecting to the Spotify API - I used a Spotify-React wrapper from xxx to fetch the top album data from
+            the users Spotify.</li>
+
+        </ol>
+
+        </p>
+      </article>
+
+
+
+    </div>
+
     <!-- project 2-->
     <div class="project-card">
       <h3>02.</h3>
@@ -66,30 +142,153 @@
           A critical thinking exercise about race which uses a card game
           format to prompt users to engage with social justice issues.
         </p>
-        <p>React, CSS, Spotify API</p>
+        <p>JS, SCSS, HTML</p>
         <a href="https://explanations.netlify.app/">go to live site</a>
         <a href="https://github.com/MashegoSililo/Explanations">view github repo</a>
         <br />
-        <!-- <button class="read-more" onclick="openProjectB">
+        <button class="read-more" onclick='openModal(`projectTwo`)'>
           read more about the project.
-        </button> -->
+        </button>
         <br />
       </div>
-
     </div>
+    <!-- Project 2 Modal -->
+    <div id='projectTwo' class='modal'>
+      <button class='close' onclick='closeModal(`projectTwo`)'>
+        <img src='./images/icons/close.svg'>
+      </button>
+      <h1>Explanations</h1>
+      <br>
+      <h3>Explanations is a critical thinking exercise about race which uses a card game
+        format to prompt users to engage with social justice issues.</h3>
+      <h3>Tech Stack: JS, SCSS, HTML</h3>
+      <br>
+      <article>
+        <div class="sub-heading">
+          <span>01.</span>
+          <span>Brief.</span>
+        </div>
+        <p> For Explanations the aim was to create a critical thinking exercise that could exist on the web. 
+          The project was modelled after other card games like <i>We're not really strangers.</i> that use 
+          prompts to get people talking about serious topics. 
+           </p>
+      </article>
+      <article>
+        <div class="sub-heading">
+          <span>02.</span>
+          <span>Research.</span>
+        </div>
+        <p>The research was mostly focused on making a card game that can be accessed online while also delivering quality UI.
+          I started out with cards that flip around when clicked but when I became aware of material design practises, I began the 
+          process of making the cards more user-friendly while also adhering to material design standards.
+        </p>
+      </article>
+      <article>
+        <div class="sub-heading">
+          <span>03.</span>
+          <span>Design Concept.</span>
+        </div>
+        <p>
+         In terms of design concept, I wanted the design to reflect community. I did this through the use of color and imagery
+         that had people from different walks of live interacting with each other. I focused on  creating a clean and seamless UI for users.
+         
+
+        </p>
+      </article>
+      <article>
+        <div class="sub-heading">
+          <span>04.</span>
+          <span>Development.</span>
+        </div>
+        <p>
+          This was a straight-forward development process. I opted for SCSS because it allowed me to do major changes in the design 
+          of the project through the use of variables and mix-ins. It has also allowed maintennace of the site to be much more efficient.
+
+        </p>
+      </article>
+    </div>
+
     <!-- Project 3 -->
     <div class="project-card">
       <h3>03.</h3>
       <div class="project-info">
-        <h1>Black Door (In Progress)</h1>.</h1>
+        <h1>Black Door (In Progress).</h1>
         <p>
           A curated directory for things to to in your city. This is an open source project that developers who are
           knowledgeable about Cape Town hangouts can contribute to.
         </p>
         <p>React, CSS, Mapbox API</p>
         <a href="https://github.com/MashegoSililo/black-door.git">view github repo</a>
+        <button class="read-more" onclick='openModal(`projectThree`)'>
+          read more about the project.
+        </button>
       </div>
     </div>
+    <!-- Project 3 Modal -->
+    <!-- <div id='projectThree' class='modal'>
+      <button class='close' onclick='closeModal(`projectThree`)'>
+        <img src='./images/icons/close.svg' >
+      </button>
+
+        <h1>Black Door</h1>
+
+      
+      <br>
+      <h3>Coverwall generates an album cover wall for a users personal use from the users top Spotify albums.</h3>
+      <h3>Tech Stack: React, CSS, Spotify API</h3>
+      <br>
+      <article>
+        <div class="sub-heading">
+          <span>01.</span>
+          <span >Brief.</span>
+        </div>
+        <p>
+          The aim was to create a simple app using the Spotify API in order to get comfortable with the Authorisation
+          and methodology before jumping into other Spotify based projects.
+          The project was heavily inspired by the Spotify based webapps often shared on twitter, where users share their
+          results on the app and compare their results with their followers. </p>
+      </article>
+      <article>
+        <div class="sub-heading">
+          <span>02.</span>
+          <span>Research.</span>
+        </div>
+        <p>I had never worked with an API that required a user to sign in so I had no idea how to handle authorisation.
+          So I focused the majority of my research on how to handle user authorisation and how to connect that to a
+          React app.
+          My <a href="https://medium.com/@thatissofetch" target="_blank" rel="noopener noreferrer">blog post</a> goes in
+          depth on the reserach and process I went through to build this webapp.
+
+        </p>
+      </article>
+      <article>
+        <div class="sub-heading">
+          <span>03.</span>
+          <span>Design Concept.</span>
+        </div>
+        <p>
+          For this project, I really wanted a bold and bright user interface. I initially wanted to use colors that
+          matched the Spotify color pallete before deciding to go for a yellow, tangerine, black and white color scheme.
+          I wanted the project to be bright and bold but as simple as possible. I achieved this by keeping descriptions
+          brief and using bold lettering.
+
+        </p>
+      </article>
+      <article>
+        <div class="sub-heading">
+          <span>04.</span>
+          <span>Development.</span>
+        </div>
+        <p>
+         <ol>
+           <li>Choosing the Stack - I decided to use React to handle the requests and CSS to style the webapp</li>
+           <li>Connecting to Spotify to handle authorisation - here I followed the instructions from Spotify's API docs.</li>
+           <li>Connecting to the Spotify API - I used a Spotify-React wrapper from xxx to fetch the top album data from the users Spotify.</li>
+
+         </ol>
+        </p>
+      </article>
+    </div> -->
     <footer>
       <p>Mashego Sililo. 2022</p>
     </footer>
